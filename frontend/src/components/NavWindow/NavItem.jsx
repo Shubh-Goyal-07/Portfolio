@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import { ThemeContext } from "../../contexts/Theme.jsx";
 
@@ -11,12 +10,19 @@ export default function NavItem(props) {
 
     const { theme, setTheme } = React.useContext(ThemeContext);
 
+    const handleClick = (text) => {
+        let classname = `${text.split(' ').join('-')}-main`
+        const elem = document.getElementsByClassName(classname)[0]
+
+        elem.scrollIntoView({ behavior: "smooth"})
+    }
+
     return (
-        <Link to={link} className={`nav-item bg-anti-${theme}`}>
+        <div className={`nav-item bg-anti-${theme}`} onClick={() => handleClick(text)}>
             {icon}
             <div className="nav-text">
                 {text}
             </div>
-        </Link>
+        </div>
     )
 }

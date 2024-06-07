@@ -10,7 +10,7 @@ export default function SocialBar() {
 
     return (
         <div className={`socialbar bg-${theme}`}>
-            <div class={`vl-${theme}`} style={{height:'200px'}}></div>
+            <div className={`vl-${theme}`} style={{height:'200px'}}></div>
 
             <a href='https://www.linkedin.com/in/shubh-goyal-78a6a6222' target='_blank' rel='noreferrer' className={`font-${theme}`}>
                 <RiLinkedinBoxFill />
@@ -22,7 +22,7 @@ export default function SocialBar() {
                 <RiInstagramLine />
             </a>
 
-            <div class={`vl-${theme}`} style={{height:'50px'}}></div>
+            <div className={`vl-${theme}`} style={{height:'50px'}}></div>
         </div>
     )
 }

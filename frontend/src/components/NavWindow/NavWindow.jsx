@@ -1,7 +1,7 @@
 import React from 'react'
 import './NavWindow.css'
 
-import { RiHome3Fill, RiBox2Line, RiArtboardFill, RiWechatLine } from "react-icons/ri";
+import { RiHome3Fill, RiBox2Line, RiWechatLine, RiAccountPinBoxFill, RiFileMarkedFill } from "react-icons/ri";
 import NavItem from './NavItem.jsx';
 
 import { ThemeContext } from "../../contexts/Theme.jsx";
@@ -15,13 +15,14 @@ export default function NavWindow() {
 
     return (
         <div className='navwindow'>
-            <TitleBar />
+            {/* <TitleBar /> */}
             
             <nav className='navbar'>
-                <NavItem icon={<RiHome3Fill />} text='Home' link='/' />
-                <NavItem icon={<RiBox2Line />} text='Projects' link='/projects' />
-                <NavItem icon={<RiArtboardFill />} text='Experience' link='/experience' />
-                <NavItem icon={<RiWechatLine />} text='Contact' link='/contact' />
+                <NavItem icon={<RiHome3Fill />} text='home' link='/' />
+                <NavItem icon={<RiAccountPinBoxFill />} text='about me' link='/about' />
+                <NavItem icon={<RiFileMarkedFill />} text='resume' link='/experience' />
+                <NavItem icon={<RiBox2Line />} text='projects' link='/projects' />
+                <NavItem icon={<RiWechatLine />} text='contact me' link='/contact' />
             </nav>
 
             <ThemeButton />
