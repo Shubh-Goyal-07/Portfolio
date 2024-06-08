@@ -9,7 +9,7 @@ export default function SocialBar() {
     const { theme, setTheme } = useContext(ThemeContext);
 
     return (
-        <div className={`socialbar bg-${theme}`}>
+        <div className={`socialbar font-${theme}`}>
             <div className={`vl-${theme}`} style={{height:'200px'}}></div>
 
             <a href='https://www.linkedin.com/in/shubh-goyal-78a6a6222' target='_blank' rel='noreferrer' className={`font-${theme}`}>

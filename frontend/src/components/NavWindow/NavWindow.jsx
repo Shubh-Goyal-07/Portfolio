@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import './NavWindow.css'
 
 import { RiHome3Fill, RiBox2Line, RiWechatLine, RiAccountPinBoxFill, RiFileMarkedFill } from "react-icons/ri";
 import NavItem from './NavItem.jsx';
+
+import bg from './../../data/bg.jpg';
 
 import { ThemeContext } from "../../contexts/Theme.jsx";
 import ThemeButton from './ThemeButton.jsx';
@@ -12,6 +14,10 @@ import TitleBar from './TitleBar.jsx';
 export default function NavWindow() {
 
     const { theme, setTheme } = React.useContext(ThemeContext);
+
+    useLayoutEffect(() => {
+        document.body.style.backgroundImage = `url(${bg})`;
+   });
 
     return (
         <div className='navwindow'>

@@ -10,16 +10,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background: url('/data/bg.jpg');
+
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    display: flex;
+    min-width: 320px;
 
-  background-image: url();
+  
 }
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 h1 {
   font-size: 3.2em;
