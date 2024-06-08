@@ -12,7 +12,7 @@
 }
 
 .bg-anti-light {
-    background-color: #3F2811;
+    background-color: #2b1e15;
     /* background-color: #50300e; */
     color: #f9f8eb;
 
@@ -75,6 +75,8 @@
 
 .nav-item:hover {
     column-gap: 12px;
+
+    cursor: pointer;
 }
 
 .nav-item:first-child {
@@ -121,9 +123,8 @@
 
     transform: translate(-50%, -50%) rotate(45deg)!important;
 
-    padding: 0.8rem;
+    padding: 10px;
     border-radius: 50%;
-
 }
 
 .theme-button-dark {
@@ -151,10 +152,12 @@
 
 .socialbar {
     position: fixed;
+
+    width: 50px;
     
     top: 50%;
-    right: 40px;
-    transform: translate(-80%, -50%);
+    right: 30px;
+    transform: translate(-50%, -50%);
 
     font-size: 32px;
 
